@@ -55,5 +55,37 @@ Here are a few suggestions on the next steps towards creating an online classifi
 
 For any additional questions, feel free to contact leo.sperber@gmail.com
 
+Useful refs:
+
+- Mishra, D., Salehi, M., Saha, P., Patey, O., Papageorghiou, A. T., Asano, Y. M., & Noble, J. A. (2025). Self-supervised Learning of Echocardiographic Video Representations via Online Cluster Distillation. arXiv.org. https://doi.org/10.48550/arxiv.2506.11777
+
+- Howard, J. P., Tan, J., Shun-Shin, M. J., Mahdi, D., Nowbar, A. N., Arnold, A. D., … Francis, D. P. (2020). Improving ultrasound video classification: an evaluation of novel deep learning methods in echocardiography. Journal of Medical Artificial Intelligence. https://doi.org/10.21037/jmai.2019.10.03
+
+- Yue, Y., & Li, Z. (2024). MedMamba: Vision Mamba for Medical Image Classification. arXiv.org. https://doi.org/10.48550/arxiv.2403.03849
+
+- Kang, Q., Lao, Q., Gao, J., Bao, W., Zhu, H., Du, C., Qiang, L., & Li, K. (2025). URFM: a general Ultrasound Representation Foundation Model for advancing ultrasound image diagnosis. iScience. https://doi.org/10.1016/j.isci.2025.112917
+
+- Claron, J., Blons, M., Dizeux, A., Deffieux, T., Tanter, M., Berthon, B., & Pouget, P. (2025). Distributed Activity in the Medial Frontal Cortex Predicts Self-Initiated Action. bioRxiv. https://doi.org/10.1101/2025.04.01.646546
+
+- Di Ianni, T., & Airan, R. (2022). Deep-fUS: A Deep Learning Platform for Functional Ultrasound Imaging of the Brain Using Sparse Data. IEEE Transactions on Medical Imaging. https://doi.org/10.1109/tmi.2022.3148728
+
+- Deighton, J., Zhong, S., Agyeman, K., Choi, W., Liu, C. Y., Lee, D., Maroulas, V., & Christopoulos, V. (2025). Functional Ultrasound Imaging Combined with Machine Learning for Whole-Brain Analysis of Drug-Induced Hemodynamic Changes. Imaging Neuroscience. https://doi.org/10.1162/imag.a.139
+
+- Lambert, T., Niknejad, H., Kil, D., Montaldo, G., Nuttin, B., Brunner, C., & Urban, A. (2025). Spatiotemporal Clustering of Functional Ultrasound Signals at the Single-Voxel Level. eNeuro. https://doi.org/10.1523/eneuro.0438-24.2025
+
+- Zhang, Z., Wu, Q., Ding, S., Wang, X., Ye, J., & San Francisco. (2024). EchoFM: A Pre-training and Fine-tuning Framework for Echocardiogram Videos Vision Foundation Model. medRxiv. https://doi.org/10.1101/2024.10.09.24315195
+
+- Griggs, W. S., Norman, S., Deffieux, T., Segura, F., Osmanski, B., Chau, G., Christopoulos, V., Liu, C., Tanter, M., Shapiro, M. G., & Andersen, R. A. (2023). Decoding motor plans using a closed-loop ultrasonic brain–machine interface. bioRxiv. https://doi.org/10.1038/s41593-023-01500-7
+
+- Liu, B., Luo, Q., Liang, Z., He, H., & Gu, Y. (2025). Robust single-trial decoding of physical self-motion from hemodynamic signals in the brain measured by functional ultrasound imaging. PNAS. https://doi.org/10.1073/pnas.2414354122
+
+- Griggs, W. S., Norman, S. L., Tanter, M., Liu, C. Y., Christopoulos, V., Shapiro, M. G., & Andersen, R. A. (2025). Functional ultrasound neuroimaging reveals mesoscopic organization of saccades in the lateral intraparietal area. Nature Communications. https://doi.org/10.1038/s41467-025-63826-z
+
+- Norman, S., Maresca, D., Christopoulos, V., Griggs, W. S., Demené, C., Tanter, M., Shapiro, M. G., & Andersen, R. A. (2020). Single-trial decoding of movement intentions using functional ultrasound neuroimaging. Neuron. https://doi.org/10.1101/2020.05.12.086132
+
+- Wu, C. H., Tsai, C. J., & Kuo, P. C. (2025). From Visualization to Automation: A Narrative Review of Deep Learning’s Impact on Ultrasound-based Median Nerve Assessment. Journal of Medical Ultrasound. https://doi.org/10.4103/jmu.jmu-d-25-00010
+
+- Cui, X., Li, Z., Fan, X., Huang, P., Wang, Y., Yang, M., Chang, S., & Zhu, J. (2025). Variable-frame CNNLSTM for Breast Nodule Classification using Ultrasound Videos. arXiv.org. https://doi.org/10.48550/arxiv.2502.11481
+
 Author: Leo Sperber
 
