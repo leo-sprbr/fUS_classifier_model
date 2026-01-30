@@ -48,7 +48,21 @@ Here are a few suggestions on the next steps towards creating an online classifi
 1. **Curating a consistent dataset**. Again, not having the behavioral information led me to train the model on very inconsistent data, which meant it could hardly learn anything. The most important thing here is to be sure about your data and its labels. Be careful about the experimental design and the images itself (I've had a few horizontally flipped acquisitions). The best way for the model to learn, is for each acquisition to be as similar to one another as possible.
 2. **Pre-training the model on fUS data**. The model we're finetuning here is pre-trained on [kinetics](https://github.com/cvdfoundation/kinetics-dataset), therefore it is more used to classify human movement than noisy, textured and static fUS data. Pre-training the model to another fUS dataset or even classic ultrasound imaging, could probably boost its performance, as its been seen in [other studies](https://doi.org/10.1101/2024.10.09.24315195)
 3. **Changing the labelling method**. In [Julien Claron et al.](https://doi.org/10.1101/2025.04.01.646546) the pause label is defined as 3 consecutive trials not completed by the monkey. This doesn't consider the difference there can be between periods where the monkey does every trial and periods where the monkey skips one trial every four. It could be a good idea, instead of implementing a binary classification between "work" and "pause", to create a sort of gradual value of the monkey's "attention" during the task (or "motivation", the precise term will have to be defined).
-4. **Building the online paradigm**. The true purpose of this model is to be used in an online setting. If the model shows satisfactory results, then we should code a simulation of online processing. Feeding the program fUS frames at the speed they will be taken and finetune it to be capable to process and classify each frame as it comes. 
+4. **Building the online paradigm**. The true purpose of this model is to be used in an online setting. If the model shows satisfactory results, then we should code a simulation of online processing. Feeding the program fUS frames at the speed they will be taken and finetune it to be capable to process and classify each frame as it comes.
+
+
+### Notes on the primate data (Monkeys Gus and Secundo)
+
+I worked on the data from two macaques, Gus and Secundo and there are a few considerations to keep in mind to curate a consistent dataset. First of all, the actual loading on the file depends on the format they've been given to you. The code presented here works for processed Doppler images in a .mat format, but on the data cluster of the ICM, they will probably be saved as .acq. These second ones are technically .mat files too, but the data structure will differ, which means some tweak will have to be done at the beginning of the pre-processing. Second of all, every acquisition should have an equivalent .plx file, which contains the behavioral data of the monkey. If you want for example to create a dataset including only fUS images taken during successful trials without a change in engagement before or after, it is only this .plx file that will give you the information. The behavioral_analysis file contains different scripts giving you information about the acquisition's characteristics, for more information about specific info, ask Pierre Pouget for the experimental logbook.
+
+Finally, and this is a little simpler but absolutely crucial for the training of the model, here are a few frames for the acquisitions of Gus and Secundo:
+
+### Gus
+![Gus](./img/Gus_flip.PNG)
+### Secundo
+![Secundo](./img/Secundo_flip.PNG)
+
+Since the fUS probe was sometimes flipped during the acquisitions, some session might be horizontally flipped compared to others, in the above images, the areas highlighted in red should be on the same side. In the [Julien Claron et al.](https://doi.org/10.1101/2025.04.01.646546) what they define as the SEF ROI will be on the smaller side for Secundo, and on the larger side for Gus. 
 
 For any additional questions, feel free to contact leo.sperber@gmail.com
 
